@@ -31,6 +31,12 @@
  * In addition to variables like addr,len, id, this alsocontains functions that could be moved into axi_uvm_pkg to save object space. Things like calculating aligned_address from address.
  * \todo: this seq_item is laughably large.  Don't judge me, I've seen your 'temporary' code too. ;)
  */
+
+import params_pkg::*;
+`include "uvm_macros.svh"
+import uvm_pkg::*;
+import axi_uvm_pkg::*;
+
 class axi_seq_item extends uvm_sequence_item;
   `uvm_object_utils(axi_seq_item)
 

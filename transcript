@@ -1,0 +1,132 @@
+# do runtest.do TEST_NAME
+# ARGS = 1
+# ./work
+# work
+# outsim
+# reading modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work ./work 
+# Modifying modelsim.ini
+# C:/source/axi-uvm-master/tb
+# C:/source/axi-uvm-master/tb/tb.sv
+# 1
+# +define+TUTORIAL=1
+# +define+TUTORIAL=1 +define+CL_USE_QUESTA
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# ** Warning: (vlog-13288) Multiple macros defined in +define+ command line switch.
+# Start time: 18:56:35 on Aug 27,2023
+# vlog "+acc" "+define+TUTORIAL=1 +define+CL_USE_QUESTA" -timescale 1ns/1ps -sv C:/source/axi-uvm-master/tb/params_pkg.sv C:/source/axi-uvm-master/tb/axi_pkg.sv C:/source/axi-uvm-master/tb/axi_uvm_pkg.sv C:/source/axi-uvm-master/tb/axi_if.sv C:/source/axi-uvm-master/tb/tb.sv "+incdir+C:/intelFPGA_lite/22.1std/questa_fse/uvm-1.1d/../verilog_src/uvm-1.1d/src" 
+# -- Compiling package params_pkg
+# -- Compiling package axi_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package params_pkg
+# -- Compiling package axi_uvm_pkg
+# -- Importing package axi_pkg
+# -- Compiling interface axi_if
+# -- Compiling module tb
+# -- Importing package axi_uvm_pkg
+# 
+# Top level modules:
+# 	tb
+# End time: 18:56:35 on Aug 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# tb
+# axi_sequential_reads_test
+# ../questasim.cmd
+# +UVM_TESTNAME=axi_sequential_reads_test
+# +UVM_TESTNAME=axi_sequential_reads_test
+# vsim "+UVM_TESTNAME=axi_sequential_reads_test" tb -do "../questasim.cmd" 
+# Start time: 18:56:35 on Aug 27,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.params_pkg(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.axi_pkg(fast)
+# Loading work.axi_uvm_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb(fast)
+# Loading work.axi_if(fast__1)
+# Loading C:/intelFPGA_lite/22.1std/questa_fse/uvm-1.1d\win64\uvm_dpi.dll
+# do ../questasim.cmd
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_WARNING @ 0: reporter [TPRGED] Type name 'axi_if_concrete' already registered with factory. No string-based lookup support for multiple types with the same type name.
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [TPREGR] Original object type 'axi_if_abstract' already registered to produce 'axi_if_concrete'.  Replacing with override to produce type 'axi_if_concrete'.
+# UVM_INFO @ 0: reporter [RNTST] Running test axi_sequential_reads_test...
+# UVM_INFO C:/source/axi-uvm-master/tb/axi_seq.svh(71) @ 0: reporter@@axi_sequential_reads_seq [axi_seq] Looking for AXI_DATA_WIDTH in uvm_config_db
+# UVM_INFO C:/source/axi-uvm-master/tb/axi_seq.svh(71) @ 0: reporter@@axi_responder_seq [axi_seq] Looking for AXI_DATA_WIDTH in uvm_config_db
+# UVM_INFO C:/source/axi-uvm-master/tb/axi_env.svh(67) @ 0: uvm_test_top.m_env [axi_env] Found m_axidriver_agent.m_config in config db.
+# UVM_INFO C:/source/axi-uvm-master/tb/axi_env.svh(92) @ 0: uvm_test_top.m_env [axi_env] Found m_axiresponder_agent.m_config in config db.
+# UVM_INFO C:/source/axi-uvm-master/tb/axi_sequential_reads_seq.svh(111) @ 0: reporter@@axi_sequential_reads_seq [axi_sequential_reads_seq] item 0 id:0x0 addr_lo: 0x0  addr_hi: 0x100
+# UVM_INFO C:/source/axi-uvm-master/tb/axi_sequential_reads_seq.svh(125) @ 0: reporter@@axi_sequential_reads_seq [DATA] 
+# 
+# 
+# Item 0:   Protocol: e_AXI3 Cmd: e_READ    Addr = 0xbc  ID = 0x0  Len = 0x4 (4)  BurstSize = 0x1  BurstType = 0x0  BID = 0xf BRESP = 0x3
+# UVM_INFO C:/source/axi-uvm-master/tb/axi_driver.svh(108) @ 0: uvm_test_top.m_env.m_axidriver_agent.m_driver [axi_driver] Item:  Protocol: e_AXI3 Cmd: e_READ    Addr = 0xbc  ID = 0x0  Len = 0x4 (4)  BurstSize = 0x1  BurstType = 0x0  BID = 0xf BRESP = 0x3
+# UVM_INFO C:/source/axi-uvm-master/tb/axi_monitor.svh(359) @ 130000: uvm_test_top.m_env.m_axiresponder_agent.m_monitor [axi_monitor::read_address] rvalid.size=0
+# UVM_INFO C:/source/axi-uvm-master/tb/axi_responder.svh(106) @ 130000: uvm_test_top.m_env.m_axiresponder_agent.m_responder [axi_responder] Item:  Protocol: e_AXI3 Cmd: e_READ_DATA    Addr = 0xbc  ID = 0x0  Len = 0x4 (4)  BurstSize = 0x1  BurstType = 0x0  BID = 0xf BRESP = 0x3
+# UVM_INFO C:/source/axi-uvm-master/tb/memory.svh(143) @ 210000: uvm_test_top.m_env.m_memory [...] Now reading back from memory to verify
+# UVM_INFO C:/source/axi-uvm-master/tb/memory.svh(190) @ 210000: uvm_test_top.m_env.m_memory [CHECK MEMORY]  Item:  Protocol: e_AXI3 Cmd: e_READ_DATA    Addr = 0xbc  ID = 0x0  Len = 0x4 (4)  BurstSize = 0x1  BurstType = 0x0  BID = 0xf BRESP = 0x3 pre_check_start_addr: 0x0 pre_check_stop_addr: 0xbc check_start_addr: 0xbc check_stop_addr: 0xc0 post_check_start_addr: 0xc0 post_check_stop_addr: 0x100 Lower_Wrap_Boundary: 0x0 Upper_Wrap_Boundary: 0x0
+# UVM_INFO C:/source/axi-uvm-master/tb/axi_sequential_reads_seq.svh(179) @ 210000: reporter@@axi_sequential_reads_seq [axi_sequential_reads_seq] SEQ ALL DONE
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 210000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   17
+# UVM_WARNING :    1
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [...]     1
+# [CHECK MEMORY]     1
+# [DATA]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [TPREGR]     1
+# [TPRGED]     1
+# [axi_driver]     1
+# [axi_env]     2
+# [axi_monitor::read_address]     1
+# [axi_responder]     1
+# [axi_seq]     2
+# [axi_sequential_reads_seq]     2
+# ** Note: $finish    : C:/intelFPGA_lite/22.1std/questa_fse/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 210 ns  Iteration: 61  Instance: /tb
+# End time: 18:56:44 on Aug 27,2023, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0
